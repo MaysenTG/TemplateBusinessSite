@@ -1,0 +1,88 @@
+html {
+  font-family: "Lexend Mega", sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+#navigation {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+#navigation li {
+  display: block;
+  flex: 0 1 auto;
+  list-style-type: none;
+  margin: 0 auto;
+}
+
+#navigation a {
+  text-decoration: none;
+}
+
+body {
+  min-height: 100%;
+  height: 200vh;
+  width: 100%;
+  display: grid;
+  padding: 0;
+  margin: 0;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: minmax(0, repeat(10, 1fr));
+  background-image: url("media/building-background.jpg");
+  background-size: cover;
+  z-index: 1;
+}
+
+#head {
+  text-align: center;
+  align-items: center;
+  grid-column: span 3;
+  background-color: white;
+}
+
+#mission-statement {
+  background-color: white;
+  grid-row: 3;
+  grid-column: 1 / span 3;
+  text-align: center;
+  border: 2px solid black;
+}
+
+#portfolio {
+  text-align: center;
+  background-color: white;
+  grid-area: 5 / 1 / 6 / span 3;
+  border: 2px solid black;
+}
+
+#our-team {
+  text-align: center;
+  margin: 0 auto;
+  grid-area: 6 / 1 / 10 / span 3;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  justify-content: center;
+}
+
+#our-team figcaption {
+  color: black;
+  font-size: 25px;
+}
+
+#our-team img {
+  width: 300px;
+  height: 450px;
+}
+
+footer {
+  text-align: center;
+  grid-area: 10 / 1 / 10 / span 3;
+  background-color: white;
+}
+
+@media only screen and (max-width: 1150px) {
+}
